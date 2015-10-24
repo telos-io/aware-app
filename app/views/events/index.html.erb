@@ -31,3 +31,127 @@
 <br>
 
 <%= link_to 'New Event', new_event_path %>
+
+
+      <div class="">
+
+        <div class="groupFilters">
+
+          <div class="row meditationLength filterRow" style="margin-top: 15px; margin-bottom: 15px;">
+
+            <div class="col-md-2">
+
+              <p>How Time Do You Have?</p>
+
+            </div>
+
+            <div class="col-md-10">
+
+              <form>
+                <input type="radio" value="5minutes" name="lengthMinutes">5 Minutes
+                <input type="radio" value="10minutes" name="lengthMinutes">10 Minutes
+                <input type="radio" value="15minutes" name="lengthMinutes">15 Minutes
+                <input type="radio" value="20minutesMore" name="lengthMinutes">20+ Minutes
+              </form>
+
+            </div>
+
+          </div> <!-- meditationLength -->
+
+          <div class="row meditationTopic filterRow" style="margin-top: 15px; margin-bottom: 15px;">
+
+            <div class="col-md-2">
+
+              <p>Find A Particular Topic</p>
+
+            </div>
+
+            <div class="col-md-10">
+
+              <input type="text" id="topicSearch" class="form-control" placeholder="Happiness, Laughing, Flow">
+
+            </div>
+
+          </div> <!-- meditationTopic -->
+
+          <div class="row meditationTime filterRow" style="margin-top: 15px; margin-bottom: 15px;">
+
+            <div class="col-md-2">
+
+              <p>Find a Specific Time</p>
+
+            </div>
+
+            <div class="col-md-10">
+
+              <div class="form-group">
+                  <div class='input-group date' id='meditationTimePicker'>
+                      <input type='text' class="form-control" />
+                      <span class="input-group-addon">
+                          <span class="glyphicon glyphicon-calendar"></span>
+                      </span>
+                  </div>
+              </div>
+
+            </div>
+
+          </div> <!-- meditationTime -->
+
+          <div class="row sortOptions filterRow" style="margin-top: 15px; margin-bottom: 15px;">
+
+            <div class="col-md-2">
+
+               <p>Sort Meditations By</p>
+
+            </div>
+
+            <div class="col-md-10">
+
+              <form action="">
+                <input type="checkbox" name="trending" value="trending">Trending Meditations
+                <input type="checkbox" name="startingSoon" value="startingSoon">Starting Soon
+              </form>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div> <!-- groupFilters -->
+
+      <div class="row meditationContainer text-center">
+
+        <div class="col-md-4">
+
+          <img src="img/happy.jpg" style="width: 100%;">
+          <a href="individual-meditation.html"><h3>Motivation</h3></a>
+
+        </div>
+
+        <div class="col-md-4">
+
+          <img src="img/friends.jpg" style="width: 100%;">
+          <a href="individual-meditation.html"><h3>Positive Intentions</h3></a>
+        </div>
+
+        <div class="col-md-4">
+
+          <img src="img/exercise.jpg" style="width: 100%;">
+          <a href="individual-meditation.html"><h3>Increase Engagement</h3></a>
+        </div>
+
+      </div> <!-- meditationContainer -->
+  
+    <!-- Plugins to handle date picker functionality -->
+    <script src="js/moment.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+
+    <script type="text/javascript">
+            $(function () {
+                $('#meditationTimePicker').datetimepicker();
+            });
+        </script>
+
+     <!-- Custom Scripts -->
+    <script src="js/scripts.js"></script>

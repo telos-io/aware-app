@@ -1,0 +1,235 @@
+<div class="debrief">
+
+      <div class="row">
+
+        <div class="col-md-12">
+
+          <div class="page-header">
+            <h1>Session Debrief </h1>
+          </div>
+
+        </div>
+
+      </div> <!-- row -->
+
+      <div class="row">
+
+        <div class="col-md-6 col-sm-6 debrief-questions">
+
+          <h2>1. What was your favorite part of the meditation?</h2>
+          <textarea class="form-control" rows="4"></textarea>
+
+           <h2>2. Any other thoughts or comments?</h2>
+          <textarea class="form-control" rows="4"></textarea>
+
+          <br>
+
+          <button class="btn btn-success btn-lg">Save Answers</button>
+
+        </div>
+
+         <div class="col-md-6 col-sm-6 debrief-chat">
+
+           <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-comment"></span> Chat
+                </div>
+                <div class="panel-body">
+                    <ul class="chat">
+                        <li class="left clearfix"><span class="chat-img pull-left">
+                            <img src="http://placehold.it/50x50" alt="User Avatar" class="img-circle" />
+                        </span>
+                            <div class="chat-body clearfix">
+                                <div class="header">
+                                    <strong class="primary-font">Jack Sparrow</strong> <small class="pull-right text-muted">
+                                        <span class="glyphicon glyphicon-time"></span>12 mins ago</small>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
+                                    dolor, quis ullamcorper ligula sodales.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="right clearfix"><span class="chat-img pull-right">
+                            <img src="http://placehold.it/50x50" alt="User Avatar" class="img-circle" />
+                        </span>
+                            <div class="chat-body clearfix">
+                                <div class="header">
+                                    <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>13 mins ago</small>
+                                    <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
+                                    dolor, quis ullamcorper ligula sodales.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="left clearfix"><span class="chat-img pull-left">
+                            <img src="http://placehold.it/50x50" alt="User Avatar" class="img-circle" />
+                        </span>
+                            <div class="chat-body clearfix">
+                                <div class="header">
+                                    <strong class="primary-font">Jack Sparrow</strong> <small class="pull-right text-muted">
+                                        <span class="glyphicon glyphicon-time"></span>14 mins ago</small>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
+                                    dolor, quis ullamcorper ligula sodales.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="right clearfix"><span class="chat-img pull-right">
+                            <img src="http://placehold.it/50x50" alt="User Avatar" class="img-circle" />
+                        </span>
+                            <div class="chat-body clearfix">
+                                <div class="header">
+                                    <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>15 mins ago</small>
+                                    <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
+                                    dolor, quis ullamcorper ligula sodales.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="left clearfix"><span class="chat-img pull-left">
+                            <img src="http://placehold.it/50x50" alt="User Avatar" class="img-circle" />
+                        </span>
+                            <div class="chat-body clearfix">
+                                <div class="header">
+                                    <strong class="primary-font">Jack Sparrow</strong> <small class="pull-right text-muted">
+                                        <span class="glyphicon glyphicon-time"></span>14 mins ago</small>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
+                                    dolor, quis ullamcorper ligula sodales.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="right clearfix"><span class="chat-img pull-right">
+                            <img src="http://placehold.it/50x50" alt="User Avatar" class="img-circle" />
+                        </span>
+                            <div class="chat-body clearfix">
+                                <div class="header">
+                                    <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>15 mins ago</small>
+                                    <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
+                                    dolor, quis ullamcorper ligula sodales.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="panel-footer">
+                    <div class="input-group">
+                        <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
+                        <span class="input-group-btn">
+                            <button class="btn btn-warning btn-sm" id="btn-chat">
+                                Send</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+      </div> <!-- row -->
+
+      <div class="row">
+
+         <div class="col-md-12">
+
+          <div class="page-header">
+            <h1>Session Analytics</h1>
+          </div>
+
+        </div>
+
+
+        <div class="col-md-6 col-sm-6 col-lg-6 text-center chartContainer">
+
+          <h4>Total Time (Mins) Spent Meditating in the Last 7 Days</h4>
+
+          <canvas id="totalTimeInMinutes" width="400" height="200"></canvas>
+
+        </div>
+
+        <div class="col-md-6 col-sm-6 col-lg-6 text-center chartContainer">
+
+          <h4>Mood Scores Against Total Time Spent Meditating</h4>
+
+          <canvas id="moodVersusTotalTime" width="400" height="200"></canvas>
+
+        </div>
+
+      </div>
+
+
+    </div> <!-- container -->
+
+     <script>
+
+      var totalTimeInMinutesData = {
+        labels : ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        datasets : [
+          {
+            fillColor : "rgba(220,220,220,0.5)",
+            strokeColor : "rgba(220,220,220,0.8)",
+            highlightFill: "rgba(220,220,220,0.75)",
+            highlightStroke: "rgba(220,220,220,1)",
+            data : [13, 17, 5, 8, 9, 10, 11]
+          }
+        ]
+
+      }
+
+      var moodVersusTotalTimeData = {
+        labels : ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        datasets : [
+          {
+            label: "Total Time Meditating",
+            fillColor: "rgba(220,220,220,0.2)",
+            strokeColor: "rgba(220,220,220,1)",
+            pointColor: "rgba(220,220,220,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(220,220,220,1)",
+            data: [13, 17, 5, 8, 9, 10, 11]
+        },
+        {
+            label: "Mood Scores",
+            fillColor: "rgba(151,187,205,0.2)",
+            strokeColor: "rgba(151,187,205,1)",
+            pointColor: "rgba(151,187,205,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(151,187,205,1)",
+            data: [7, 9, 2, 3, 4, 7, 9]
+        }
+        ]
+
+      }
+
+      window.onload = function(){
+
+        var chart1 = document.getElementById("totalTimeInMinutes").getContext("2d");
+        window.myBar = new Chart(chart1).Bar(totalTimeInMinutesData, {
+          responsive : true
+        });
+
+        var chart2 = document.getElementById("moodVersusTotalTime").getContext("2d");
+        window.myBar = new Chart(chart2).Line(moodVersusTotalTimeData, {
+          responsive : true
+        });
+
+      }
+
+  </script>
+
+    <!-- ChartJS File -->
+    <script src="js/Chart.js"></script>
+
+     <!-- Custom Scripts -->
+    <script src="js/scripts.js"></script>

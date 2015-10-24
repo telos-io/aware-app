@@ -22,3 +22,217 @@
 
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>
+
+
+   <div class="session-info individual-session text-center">
+
+     <h1 class="session-title">Motivation</h1>
+     <p class="session-description">A 20 minute session to help you achieve more.</p>
+
+     <p class="session-sharing">Share This Session: <img src="img/social-media-icons.png" height="25"> </p>
+
+   </div>
+
+
+   <div class="row">
+
+     <div class="col-md-9">
+
+       <h3 class="orange-headline">23 of 456 have signed up for this session!</h3>
+
+       <div class="timerContainer">
+
+         <h2 class="timer sessionStartTimer">Session Will Start In: <strong><span value="1445130683000"></span></strong>
+         </h2>
+
+         <h2 class="timer sessionEndTimer hidden">Session Will End In: <strong><span value="1445130916000"></span></strong>
+         </h2>
+
+       </div>
+
+     <div class="panel panel-default">
+       <div class="panel-heading">
+         <h3 class="panel-title">Session Description</h3>
+       </div>
+       <div class="panel-body">
+         <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+               <span>
+                 <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/228875060&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+               </span>
+       </div>
+     </div>
+
+     <div class="firebaseCode">
+
+       <iframe src="http://startupscrums.divshot.io/" width="100%" height="700" frameborder="0" scrolling="0"></iframe>
+
+     </div>
+
+   </div>
+
+  <div class="col-md-3">
+
+   <button class="btn btn-success btn-block sessionSignUp">SIGN UP</button>
+
+   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20824.26022638255!2d-123.12630685!3d49.275780850000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1445139598196" width="264" height="264" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+    <div class="panel panel-default">
+       <div class="panel-heading">
+         <h3 class="panel-title">Group Info</h3>
+       </div>
+       <div class="panel-body">
+         <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+
+       </div>
+     </div>
+
+  </div>
+
+</div> <!-- row -->
+
+  <div class="row">
+
+    <div class="col-md-6">
+      <a class="debrief-link" href="debrief.html">Session Debrief...</a>
+    </div>
+
+  </div>
+
+</div> <!-- row -->
+
+  <!-- Modal -->
+   <div class="modal fade" id="sessionQuestions" tabindex="-1" role="dialog" aria-labelledby="sessionQuestionsLabel">
+     <div class="modal-dialog" role="document">
+       <div class="modal-content">
+         <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+           <h4 class="modal-title" id="sessionQuestionsLabel">Pre-Session Questions</h4>
+         </div>
+         <div class="modal-body">
+
+           <form class="form-group">
+                 <label for="afterMood">Desribe your Mood.</label>
+                 <input type="text" label="afterMood" class="form-control">
+                 <label for="afterCalmRating">On a scale of 1 to 10, how calm do you feel?</label>
+                 <input type="number" label="afterCalmRating" min="1" max="10" class="form-control">
+                 <label for="afterCloseRating">On a scale of 1 to 10, how close to other people do you feel?</label>
+                 <input type="number" label="afterCloseRating" min="1" max="10" class="form-control">
+                 <br>
+                 <button class="btn btn-success">Enter</button>
+           </form>
+
+         </div>
+         <div class="modal-footer">
+           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+           <button type="button" class="btn btn-primary">Save changes</button>
+         </div>
+       </div>
+     </div>
+   </div>
+
+   <!-- Modal -->
+   <div class="modal fade" id="sessionEndQuestions" tabindex="-1" role="dialog" aria-labelledby="sessionEndQuestionsLabel">
+     <div class="modal-dialog" role="document">
+       <div class="modal-content">
+         <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+           <h4 class="modal-title" id="sessionEndQuestionsLabel">Session Has Ended</h4>
+         </div>
+         <div class="modal-body">
+
+           <form class="form-group">
+                 <label for="afterMood">Desribe your Mood.</label>
+                 <input type="text" label="afterMood" class="form-control">
+                 <label for="afterCalmRating">On a scale of 1 to 10, how calm do you feel?</label>
+                 <input type="number" label="afterCalmRating" min="1" max="10" class="form-control">
+                 <label for="afterCloseRating">On a scale of 1 to 10, how close to other people do you feel?</label>
+                 <input type="number" label="afterCloseRating" min="1" max="10" class="form-control">
+                 <br>
+                 <button class="btn btn-success">Enter</button>
+           </form>
+
+         </div>
+         <div class="modal-footer">
+           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+           <button type="button" class="btn btn-primary">Save changes</button>
+         </div>
+       </div>
+     </div>
+   </div>
+
+</div> <!--container-->
+
+
+
+
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <!-- Include all compiled plugins (below), or include individual files as needed -->
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/moment.js"></script>
+
+   <!-- jQuery Timer plugin -->
+   <script src="js/jquery.countdown.min.js"></script>
+
+   <script>
+
+   $('document').ready(function() {
+
+     //Get the value until the session starts
+     var sessionStartTimerValue = moment().add(15, 's').toDate();
+     var sessionEndTimerValue = moment().add(30, 's').toDate();
+
+     function sessionEndTimer() {
+
+        $('.sessionEndTimer span').countdown(sessionEndTimerValue, function(event) {
+
+          $(this).text(
+            event.strftime('%H:%M:%S')
+          );
+
+          //Once this timer finishs, launch the timer for actual session
+          if (event.type == "finish") {
+
+            $('#sessionEndQuestions').modal('show');
+            $('.sessionEndTimer').text("Session Has Ended");
+
+          }
+
+       });
+
+     }
+
+     $('.sessionStartTimer span').countdown(sessionStartTimerValue, function(event) {
+
+        $(this).text(
+          event.strftime('%H:%M:%S')
+        );
+
+        //Get time remaining on timer
+        var minutesRemaining = event.offset.minutes;
+        var secondsRemaining = event.offset.seconds;
+
+        //Once timer hits 5 minutes, show popup modal
+        if (minutesRemaining == 0 && secondsRemaining == 5) {
+           $('#sessionQuestions').modal('show');
+        }
+
+        //Once this timer finishs, launch the timer for actual session
+        if (event.type == "finish") {
+
+         $('.sessionStartTimer').addClass('hidden');
+         $('.sessionEndTimer').removeClass('hidden');
+         sessionEndTimer();
+
+        }
+
+     });
+
+
+   })
+
+   </script>
+
+    <!-- Custom Scripts -->
+   <script src="js/scripts.js"></script>
